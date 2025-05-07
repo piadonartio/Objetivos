@@ -1,0 +1,11 @@
+:root{
+    --cor-de-fundo: #1E1E1E;
+    --rosa: #ff00d9;
+    --branco: #ffffff;
+    --botao-ativo: #2243ff;
+    --botao-inativo: #fff23a;
+    --texto-fundo: #ffffff;
+    --fonte: Cal Sans Static;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+</style>);
