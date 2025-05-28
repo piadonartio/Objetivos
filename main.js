@@ -32,5 +32,25 @@ function comecaCronometro (){
     setInterval (atualizarCronometro, 1000);
 }
 comecaCronometro();
+function calculaTempo (tempoObjetivo){
+    let tempoAtual = new DAte ();
+    let tempoFinal = tempoObjetivo - tempoAtual; 
+    let segundos = Math.floor(tempoFinal/1000);
+    let minutos = Math.floot(segundos/60);
+    let horas = Math.floor (minutos/60);
+    let dia = Math.floor(horas/24);
+    
+    segundos %=60;
+    minutos %=60;
+    horas %=24;
+
+    if (tempoFinal > 0){
+        return [dispatchEvent,horas,minutos,segundos];
+    }else{
+        return [0,0,0,0]
+    }
+}
+
+
 
 
