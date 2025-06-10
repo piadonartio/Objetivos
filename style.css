@@ -97,7 +97,8 @@ body{
 .contador-digito-numero{
     font-size: 80px;
     margin: 0;
-}.contador-digito-texto{
+}
+.contador-digito-texto{
     color: var(--rosa);
     font-size: 20px;
     margin: 0;
