@@ -1,13 +1,13 @@
 :root{
-    --cor-de-fundo: #1E1E1E;
-    --rosa: #d6d6d6;
-    --branco: #bb17bb;
-    --botao-ativo: #ffffff;
-    --botao-inativo: #ffffff;
-    --texto-fundo: #000000;
-    --fonte: 'Cal Sans Static';
+    --cor-de-fundo:#040404;   
+    --azul:#6ccdbb; 
+    --branco:#ffffff; 
+    --botao-ativo: #b4b3fd; 
+    --botao-inativo:#215c87;  
+    --texto-fundo:#070707; 
+    --fonte: 'Cascadia Code'; 
 }
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
 body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
@@ -28,7 +28,7 @@ body{
     font-size: 32px;
 }
 .titulo-principal span{
-    color: var(--rosa);
+    color: var(--branco);
 }
 .botao{
     font-family: var(--fonte);
@@ -42,7 +42,7 @@ body{
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
-    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
 .botoes{
@@ -54,18 +54,19 @@ body{
 .botao:last-child{
     border-radius: 0 40px 0 0;
 }
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) { 
     .botoes{
         display: flex;
     }
+}
 .abas-textos{
-    background-color:var(--texto-fundo);
+    background-color: var(--cor-de-fundo);
     padding: 40px;
-    border-radius: 0 0 40px;
+    border-radius: 0 0 40px 40px;
 }
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--rosa);
+    border-bottom: 4px solid var(--branco);
 }
 .aba-conteudo{
     display: none;
@@ -79,7 +80,7 @@ body{
 }
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--rosa);
+    color: var(--branco);
     text-transform: uppercase;
 }
 .contador{
@@ -99,7 +100,7 @@ body{
     margin: 0;
 }
 .contador-digito-texto{
-    color: var(--rosa);
+    color: var(--branco);
     font-size: 20px;
     margin: 0;
 }
